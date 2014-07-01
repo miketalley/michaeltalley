@@ -1,3 +1,3 @@
-var mainCtrl = function($scope, $http){
+var mainCtrl = function($scope, $location, $http){
 
 };
