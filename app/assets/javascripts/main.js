@@ -1,3 +1,6 @@
+//= require_self
+//= require_tree ./controllers
+
 var mtApp = angular.module('mtApp', ['ngRoute']);
 
 mtApp.config(['$routeProvider', function($routeProvider){
