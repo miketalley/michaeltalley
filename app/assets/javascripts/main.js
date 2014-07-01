@@ -4,15 +4,17 @@
 var mtApp = angular.module('mtApp', ['ngRoute']);
 
 mtApp.config(['$routeProvider', function($routeProvider){
-    // Route for '/product'
-    $routeProvider.when('/', {
-    templateUrl: '../assets/mainIndex.html',
-    controller: 'mainCtrl'
-});
-
-    // default route
-   $routeProvider.otherwise({
-    templateUrl: '../assets/mainIndex.html',
-    controller: 'mainCtrl'
+    $routeProvider
+    .when('/contact', {
+      templateUrl: '../assets/contact.html',
+      controller: 'mainCtrl'
+    })
+    .when('/resume', {
+      templateUrl: '../assets/MikeTalleyResume.pdf',
+      controller: 'mainCtrl'
+    })
+    .otherwise({
+      templateUrl: '../assets/mainIndex.html',
+      controller: 'mainCtrl'
     });
 }]);

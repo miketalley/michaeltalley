@@ -5,8 +5,55 @@
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application', controller_name %>
   <%= csrf_meta_tags %>
+  <script src="js/angular.min.js"></script>
+  <script src="js/app.js"></script>
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/my.css">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 </head>
 <body ng-controller="mainCtrl">
+<div class="container">
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Michael Talley</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/resume">Resume</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">GitHub Projects<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li class="dropdown-header"><a href="http://www.github.com/miketalley">miketalley on GitHub</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Game Bonder</a></li>
+              <li><a href="https://github.com/lisaplesko/is-it-just-me-or" target="_blank">Is It Just Me Or...?</a></li>
+              <li><a href="https://github.com/miketalley/lunchdate" target="_blank">Lunch Date</a></li>
+              <li><a href="https://github.com/miketalley/streetperformr" target="_blank">Streetperformr</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Heroku Apps<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="http://gamebonder.herokuapp.com" target="_blank">Game Bonder</a></li>
+              <li><a href="http://isitjustmeor.herokuapp.com" target="_blank">Is It Just Me Or...?</a></li>
+              <li><a href="http://lunchdate.herokuapp.com" target="_blank">Lunch Date</a></li>
+              <li><a href="http://streetperformr.herokuapp.com" target="_blank">Streetperformr</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+</div>
 
 <%= yield %>
 
