@@ -1,14 +1,14 @@
-var mtApp = angular.module('mtApp', ['ngRoute']);
+var mtApp = angular.module('mtApp', ['ngRoute', 'templates']);
 
 mtApp.config(function($routeProvider){
     $routeProvider
     .when('/contact', {
-      templateUrl: '../assets/contact.html'
+      templateUrl: 'contact.html'
     })
     .when('/resume', {
-      templateUrl: '../assets/MikeTalleyResume.pdf'
+      templateUrl: 'MikeTalleyResume.pdf'
     })
     .otherwise({
-      templateUrl: '../assets/mainIndex.html'
+      templateUrl: 'mainIndex.html'
     });
 });
