@@ -5,7 +5,7 @@ gem 'angularjs-rails'
 gem 'puma'
 gem 'bootstrap-sass'
 gem 'rails_12factor'
-gem 'angular-rails-templates'
+# gem 'angular-rails-templates'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
