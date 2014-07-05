@@ -6,7 +6,7 @@
   <%= javascript_include_tag 'application', controller_name %>
   <%= csrf_meta_tags %>
 </head>
-<body ng-controller="mainCtrl">
+<body>
 <div class="container">
   <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
@@ -49,8 +49,8 @@
   </div>
 </div>
 
-<div class='container'>
-  <div ng-view></div>
+<div class='container' ng-view>
+<% yield %>
 </div>
 
 </body>
