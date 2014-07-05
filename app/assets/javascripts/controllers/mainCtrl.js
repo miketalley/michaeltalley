@@ -1,3 +1,5 @@
-var mainCtrl = function($scope, $location, $http){
+angular.module('mtApp', [])
+.controller('mainCtrl', ['$scope', function($scope){
 
-};
+
+}]);
