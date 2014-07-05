@@ -2,12 +2,14 @@ var mtApp = angular.module('mtApp', ['ngRoute'])
 .config(function($routeProvider){
     $routeProvider
     .when('/contact', {
-      templateUrl: "<%= asset_path('/assets/contact.html') %>"
+      templateUrl: "<%= asset_path('/assets/contact.html') %>",
+      controller: 'mainCtrl'
     })
     .when('/resume', {
       templateUrl: 'MikeTalleyResume.pdf'
     })
     .otherwise({
-      templateUrl: "<%= asset_path('/assets/mainIndex.html') %>"
+      templateUrl: "<%= asset_path('/assets/mainIndex.html') %>",
+      controller: 'mainCtrl'
     });
 });

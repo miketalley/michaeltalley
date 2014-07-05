@@ -1,5 +1,5 @@
 angular.module('mtApp', [])
-.controller('mainCtrl', ['$scope', function($scope){
+.controller('mainCtrl', function($scope){
   $scope.welcome = 'Welcome to Mikes Site!';
 
-}]);
+});
