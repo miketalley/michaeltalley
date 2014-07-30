@@ -1,0 +1,28 @@
+<div class='container' id='body-container'>
+
+<h3 id='name'>
+Thank you for taking an interest in me!
+</h3>
+
+<p>
+Simply enter your email address in the box below to receive an email with my resume link or if
+you prefer to view the resume now...</p>
+
+<p>
+<a href="/assets/MikeTalleyResume.pdf" download>Click Here to Download Now</a>
+</p>
+
+  <div class='row'>
+    <div class='col-md-6'>
+      <%= form_tag(controller: 'main', action: 'resume_email') do %>
+    <div class='input-group'>
+      <%= text_field_tag 'email', nil, class: "form-control", placeholder: 'you@yourdomain.com' %>
+      <span class='input-group-btn'>
+        <%= submit_tag "Send Resume", class: "btn btn-primary" %>
+      </span>
+    </div>
+    <% end %>
+    </div>
+  </div>
+</div>
+
