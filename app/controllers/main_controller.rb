@@ -10,6 +10,6 @@ class MainController < ApplicationController
 
   def resume_email
     ResumeMailer.email_resume(params['email']).deliver
-    redirect_to resume_path
+    redirect_to root_path
   end
 end
